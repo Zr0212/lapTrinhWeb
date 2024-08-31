@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vũ Thương</title>
+    <style>
+        @font-face {
+            font-family: neon;
+            src: url("clip.regular.ttf");
+        }
+        *{
+            color: #7096d1;
+            font-family: neon;
+            margin: 0;
+            padding: 0;
+            transition: 0.4s;
+        }
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .neon {
+            color: #426DFB;
+            text-shadow: 0 0 13.33px #2356FF;
+            animation: neon 1s ease infinite;
+            -moz-animation: neon 1s ease infinite;
+            -webkit-animation: neon 1s ease infinite;
+        }
+        a.neon {
+            color: #426DFB;
+            text-shadow: 0 0 13.33px #2356FF;
+            animation: flux 2s linear infinite;
+            -moz-animation: neon 2s linear infinite;
+            -webkit-animation: neon 2s linear infinite;
+            -o-animation: neon 2s linear infinite;
+        }
+        @keyframes neon {
+            0%,
+            100% {
+                text-shadow: 0 0 4.44px #1041FF,
+                            0 0 13.33px #1041FF,
+                            0 0 44.44px #1041FF,
+                            0 0 44.44px #1041FF,
+                            0 0 1.78px #8BFDFE,
+                            2.22px 2.22px 1.78px #147280;
+                color: #28D7FE;
+            }
+        }
+        a.neon:hover {
+            animation: neonHover 1s ease infinite;
+            -moz-animation: neonHover 1s ease infinite;
+            -webkit-animation: neonHover 1s ease infinite;
+        }
+        @keyframes neonHover {
+            0%,
+            100% {
+                text-shadow: 0 0 4.44px #1041FF,
+                            0 0 13.33px #1041FF,
+                            0 0 44.44px #1041FF,
+                            0 0 44.44px #1041FF,
+                            0 0 1.78px #8BFDFE,
+                            2.22px 2.22px 1.78px #147280;
+                color: #28D7FE;
+            }
+            50% {
+                text-shadow: 0 0 2.22px #082180,
+                            0 0 6.67px #082180,
+                            0 0 22.22px #082180,
+                            0 0 22.22px #082180,
+                            0 0 0.89px #082180,
+                            2.22px 2.22px 1.78px #0A3940;
+                color: #146C80;
+            }
+        }
+        .demo {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            height: 100vh;
+        }
+        .demo li {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            -webkit-transition: -webkit-box-flex 500ms ease-out;
+            -webkit-transition: -webkit-flex 500ms ease-out;
+            transition: -webkit-box-flex 500ms ease-out;
+            transition: -ms-flex 500ms ease-out;
+            transition: flex 500ms ease-out;
+            padding: 20px;
+        }
+        .container{
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .card{
+            width: 80%;
+            height: 80%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        a{
+            text-decoration: none;
+            color: #7096d1;
+            padding: 10px;
+        }
+        .demo li:nth-child(1) {
+            background: url('images/1.jpg') no-repeat center center; 
+            background-size: cover; 
+        }
+        .demo li:nth-child(2) {
+            background: url('images/2.jpg') no-repeat center center; 
+            background-size: cover; 
+        }
+        .demo li:nth-child(3) {
+            background: url('images/3.jpg') no-repeat center center; 
+            background-size: cover; 
+        }
+            .demo li:hover {
+            -webkit-box-flex: 3;
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+        }
+            .demo li:hover .container{
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="demo">
+        <li>
+            <span class="neon">
+                LAB 1
+            </span>
+            <div class="container">
+                <div class="card">
+                    <a class="neon" href="Buoi1/B1_1.php">Ex 1</a>
+                    <a class="neon" href="Buoi1/B1_2.php">Ex 2</a>
+                    <a class="neon" href="Buoi1/B1_3.php">Ex 3</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <span class="neon">
+                LAB 2
+            </span>
+            <div class="container">
+                <div class="card">
+                    <a class="neon" href="Buoi2/B2_1.php">Ex 3</a>
+                    <a class="neon" href="Buoi2/B2_2.php">Ex 4</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <span class="neon">
+                LAB 3
+            </span>
+            <div class="container">
+                <div class="card">
+                    <a class="neon" href="Buoi3/Bai1.php">Ex 1</a>
+                    <a class="neon" href="Buoi3/Bai2form.php">Ex 2</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
